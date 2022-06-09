@@ -75,7 +75,7 @@ const ExerciseData = () => {
   const deleteHandler = (id) => {
     if (window.confirm("Are you sure want to delete this row!")) {
       axios
-        .delete("http://localhost:3001/exercise/" + id)
+        .delete("https://exercise-tracker-pro-app.vercel.app/exercise/" + id)
         .then((res) => console.log(res.data));
       let tempArray = exercise.filter((item) => item._id !== id);
 
@@ -85,7 +85,7 @@ const ExerciseData = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/exercise")
+      .get("https://exercise-tracker-pro-app.vercel.app/exercise")
       .then((res) => {
         setAllExerciseData([...res.data]);
         // setExercise(res.data);

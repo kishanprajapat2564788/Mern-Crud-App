@@ -21,7 +21,7 @@ const EditExerciseData = () => {
 
   useEffect(() =>{
       axios
-        .get("http://localhost:3001/exercise/" + id)
+        .get("https://exercise-tracker-pro-app.vercel.app/exercise/" + id)
         .then((res) => {
           setExerciseData({
             username: {
@@ -39,7 +39,7 @@ const EditExerciseData = () => {
           setApiLoader(false);
         });
 
-      axios.get('http://localhost:3001/user')
+      axios.get('https://exercise-tracker-pro-app.vercel.app/user')
       .then((res) =>{
         let users = [];
           if(res.data.length > 0){
@@ -82,7 +82,7 @@ const EditExerciseData = () => {
           duration: exerciseData.duration,
           date: exerciseData.date,
         };
-        axios.post('http://localhost:3001/exercise/update/'+id, exercise)
+        axios.post('https://exercise-tracker-pro-app.vercel.app/exercise/update/'+id, exercise)
             .then(response => console.log(response.data));
             setTimeout(() =>{
               window.location = "/";

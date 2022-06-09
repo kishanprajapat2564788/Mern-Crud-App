@@ -18,7 +18,7 @@ const CreateExerciseData = () => {
   const [ApiLoader, setApiLoader] = useState(true);
 
   useEffect(() =>{
-      axios.get('http://localhost:3001/user')
+      axios.get('https://exercise-tracker-pro-app.vercel.app/user')
       .then((res) =>{
         let users = [];
           if(res.data.length > 0){
@@ -61,7 +61,7 @@ const CreateExerciseData = () => {
           duration: exerciseData.duration,
           date: exerciseData.date,
         };
-        axios.post('http://localhost:3001/exercise/add', exercise)
+        axios.post('https://exercise-tracker-pro-app.vercel.app/exercise/add', exercise)
             .then(response => console.log(response.data));
             setTimeout(() =>{
               window.location = "/";

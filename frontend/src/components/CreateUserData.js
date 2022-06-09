@@ -15,7 +15,7 @@ const CreateUserData = () => {
         const user = {
             username: userData.username,
         };
-        axios.post('http://localhost:3001/user/add', user)
+        axios.post('https://exercise-tracker-pro-app.vercel.app/user/add', user)
         .then(response => console.log(response.data));
         setuserData({
             username : '',
