@@ -1,0 +1,31 @@
+
+.success_toast{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: azure;
+	background: #4FD69C !important;
+	border-radius: 5px;
+	width: 150%;
+	padding-left: 27px;
+	bottom: 15px;
+	right:70px;
+}
+.success_toast_msg{
+	padding-left: 25px;
+}
+.warn_toast{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: azure;
+	background: #fc7c5f !important;
+	border-radius: 5px;
+	width: 150%;
+	padding-left: 27px;
+	bottom: 15px;
+	right:70px;
+}
+.warn_toast_msg{
+	padding-left: 25px;
+}

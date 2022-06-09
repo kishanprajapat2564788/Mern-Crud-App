@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Varela+Round&display=swap');
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    /* margin-right: 5px; */
+}
+/* .logo:hover {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #3B42EB, #3B42EB);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+} */
+.navbar-brand {
+    color: #000 !important;
+}
+.FormInputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+.form-group {
+    margin-bottom: 35px !important;
+    display: flex;
+    align-items: center;
+}
+.react-datepicker__triangle {
+    left:-85px !important
+}
+.react-datepicker-ignore-onclickoutside {
+    width: 100% !important;
+    border-radius: 3px !important;
+}
+.Header-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4.2rem;
+    font-weight: bold;
+}
+.nav-link {
+    color: #000 !important;
+}
+.nav-link:hover {
+    transform: scale(1.05);
+}
+.navbar-item {
+    font-weight: bold;
+    font-size: 18px;
+}
+/* .navbar-item:hover {
+    transform: scale(1.05);
+} */
+.form-control:hover {
+    border: 1px solid #00AEEF;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 1px #00AEEF;
+}
+.react-datepicker-wrapper input[type="text"]{
+    border: none;
+    outline: none;
+    /* border-radius: 4px; */
+}
+.react-datepicker-wrapper input[type="text"]:hover{
+    border: 1px solid #00AEEF !important;
+    border-radius: 4px;
+}
+.react-datepicker-wrapper input:focus{
+    outline: none !important;
+    border:1px solid #00AEEF !important;
+    box-shadow: 0 0 0 1px #00AEEF;
+}
+.css-1pahdxg-control:hover {
+    border-color:#00AEEF !important;
+}
+.css-1s2u09g-control:hover {
+    border-color: #00AEEF !important;
+}
+.css-1s2u09g-control:focus {
+    box-shadow: 0 0 0 1px #00AEEF;
+}
+
+.css-b62m3t-container {
+    width: 100%;
+}
+.css-3iigni-container {
+    width: 100%;
+}
+.edit-icon {
+    color: #000;
+}
+.delete-button {
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(45, 40, 40);
+}
+.delete-button:hover {
+    color: #000;
+}
+
+/* pagination css apply here............................... */
+
+.page-item .page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 10px;
+  border-radius: 50% !important;
+  width: 36px;
+  height: 36px;
+  font-size: 0.875rem;
+}
+
+.page-item.active .page-link {
+  background-color: rgb(50, 26, 50);
+  border-color: rgb(50, 26, 50);
+}
+
+
+/* new header nav bar */
+
+html, body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .top-nav {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00BAF0;
+    background: linear-gradient(to right, #8E91D4, #8EB7D4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 55px;
+    padding: 0.5em;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 0;
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 724px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.2em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background: linear-gradient(to right, #B6A4F5, #8EB7D4);
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
+
+  /* toast css */
+
+  .Toastify__toast-theme--light {
+    /* background: #fc7c5f !important; */
+    color: #fff !important;
+  }
+  .toastify-icon-color-warning {
+    color: #000 !important;
+  }
+  .Toastify--animate-icon {
+    position: absolute;
+    left: -25px;
+  }
+  .Toastify__progress-bar--info {
+    background: #fff !important;
+  }
+  .Toastify__progress-bar--warning {
+    background: #fff !important;
+  }

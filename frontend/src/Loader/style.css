@@ -1,0 +1,19 @@
+.align-center-loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader-style{
+    height:120px;
+    width:120px;
+    border-radius:100%;
+    background:#00BFFF;
+  }
+  
+  .loader-message{
+    color:#ffffff;
+    font-size:14px;
+    font-weight:600;
+    text-align:center !important;
+  }
